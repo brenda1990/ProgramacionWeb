@@ -93,4 +93,14 @@ nav a:hover{
    	display: inline;
    }
 }/*llave de media query min-width: 480px */	
-
+/*para pantallas mas anchas de 850px*/
+@media only screen and (min-width: 850px){
+   .header-container,
+   .main aside
+   {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+          -moz-box-shadow: 0 5px 10px #aaa;
+              -box-shadow: 0 5px 10px #aaa;
+ 
+   }
+}/*llave de media query min-width: 850px */	
