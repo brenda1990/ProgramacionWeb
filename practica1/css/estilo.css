@@ -1,0 +1,96 @@
+body{
+	font-size: 1em;/* in cm px proporcional al tamaño que tenga por default em: al tamaño que viene por default*/
+    /* COMENTARIOS*/
+    font-family:Helvetica;
+}
+.container{
+width: 90%;
+margin: 0 5%;
+/*padding: 2px 4px 10px 0px;
+margin: 40px;*/
+}
+/* -- COLORES -- */
+.header-container{
+	border-bottom: 20px solid #8d8d8d;
+}
+.footer-container, .main aside{
+	border-top: 20px solid #8d8d8d;
+}
+.header-container,
+.footer-container,
+.main aside
+{
+	background: #FA58AC;
+}
+.title{
+	color:pink;
+}
+/* ESTILO CELULAR */
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+nav a{
+	display: block;
+margin-bottom: 10px;
+padding: 15px 0;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+color: #FF0080;
+background: #DA81F5;
+}
+
+nav a:visited{
+	color:white;
+}
+nav a:hover{
+	text-decoration: underline;
+}
+/*Resolucion de pantalla*/
+.main{
+	padding: 30px 0;
+}
+.main article h1{
+	font-size: 2em
+}
+.main aside{
+	color:white;
+	padding: 0px 5%;
+}
+.footer-container footer{
+	color:white;
+	padding: 20px 0;
+}
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+/* estilos para pantalas más anchas que 480px */
+@media only screen and (min-width: 480px){
+   h1{
+   	color: green;
+   }
+   nav a{
+   	float:left;
+   	width: 27%;
+   	margin: 0 1.7%;
+   	padding: 25px 2%;
+   	margin-bottom: 0; 
+   }
+
+   nav li:first-child a{
+   	margin-left: 0;
+   }
+      nav li:last-child a{
+   	margin-right: 0;
+   }
+   nav ul li{
+   	display: inline;
+   }
+}/*llave de media query min-width: 480px */	
+
