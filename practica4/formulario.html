@@ -6,15 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>formulario</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
-    <link href="../Practica2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Practica2/bootstrap/js/bootstrapValidator.js" rel="stylesheet">
-    <link href="../Practica2/bootstrap/js/bootstrapValidator.min.js" rel="stylesheet">
-    <script type="text/javascript" src="../Practica2/bootstrap/js/bootstrapValidator.min.js"></script>
     <link rel="stylesheet" href="../Practica2/bootstrap/css/bootstrap.css"/> 
-     <link rel="stylesheet" href="../Practica2/bootstrap/css/bootstrapValidator.min.css"/>
     
     <script type="text/javascript" src="../Practica2/bootstrap/js/jquery.min.js"></script>
 
@@ -34,7 +27,20 @@
          				<input  class="form-control text-center" type="text" name="email" id="email" required >
          				<label for="email">Email2</label>
          				<input  class="form-control text-center" type="text" name="email2" id="email2" required >
+         				 <label for="foto">Foto</label>
+         	            <input  class="form-control text-center" type="file" name="buscar" id="buscar" required >
+         	            <br>
+         	            
          				<button type="button" class="btn btn-info">Mandar</button>
+         			</div>
+         			<div class="form-group">
+         				<label for="sueldo">Sueldo</label>
+         				<div class="input-group-addon">$</div>
+         	            <input  class="form-control text-center" type="text" name="foto" id="sueldo" required >
+         	            <br>
+         	            <label for="descripcion">Descripcion</label>
+         	            <textarea class="form-control" name="descripcion" id="descripcion"> 
+         	            </textarea>
          			</div>
                     
          		</form>
@@ -43,8 +49,7 @@
          	<div class="col-md-6">
                 <label for="buscar">Buscar</label>
          	    <input  class="form-control text-center" type="file" name="foto" id="foto" required >
-         	      <label for="foto">Foro</label>
-         	    <input  class="form-control text-center" type="search" name="buscar" id="buscar" required >
+         	     
          	</div>
          </div>
     </div>
