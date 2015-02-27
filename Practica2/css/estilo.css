@@ -1,5 +1,5 @@
 body{
-	font-size: 1em;/* in cm px proporcional al tamaño que tenga por default em: al tamaño que viene por default*/
+	font-size: 2em;/* in cm px proporcional al tamaño que tenga por default em: al tamaño que viene por default*/
     /* COMENTARIOS*/
     font-family:Helvetica;
 }
@@ -79,15 +79,58 @@ nav a:hover{
 .clearfix:after{
 	clear: both;
 }
+div{
+   text-align: center;
+}
+
 /* estilos para pantalas más anchas que 480px */
 @media only screen and (min-width: 480px){
+
+.titulo{
+  padding: 20px 10px;
+background:#5EAEFF;
+font-size: 30px;
+
+}
+.titulopeque{
+  padding: 1px 1px;
+background:#FFAED7;
+}
+.ch{
+padding: 5px 5px;
+background:#FF80BF;
+
+}
+.col-md-6{
+background:#FF9DFF;
+}
+.col-md-4{
+padding: 40px 1px;
+background:#FFCAE4;
+}
+.col-md-3{
+padding-bottom: 100%;
+background:#00CE67;
+}
+.col-md-9{
+  padding: 1px 1px;
+background:#E1C4FF;
+}
+.col-md-12{
+  padding: 1px 1px;
+background:#E4CAFF;
+}
+.foofer{
+  padding: 450px 20px;
+background:#009500;
+}
     table{
   width: 100%;
 }
 td,th{
   border: 3px solid blue;
   background: pink;
-  font-size: 25px;
+  font-size: 25em;
 
 }
    h1{
@@ -119,7 +162,7 @@ td,th{
 td,th{
   border: 6px solid green;
   background: purple;
-  font-size: 25px;
+  font-size: 25em;
 }
    .header-container,
    .main aside
