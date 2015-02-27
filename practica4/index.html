@@ -23,7 +23,8 @@
      var operador2 = document.getElementById("operador2").value; //Saca el elemento por su id
      alert(operador1);
      alert(operador2);
-     var result =eval(operador1 + operacion + operador2)
+     var result =eval(operador1 + operacion + operador2);
+
     document.calc.resultado.value=result;
      }
 
@@ -42,11 +43,11 @@
         	<label for="operador2">Operando 1</label>
         	<input type="text" value="2" id="operador2"  name="operador2"class="form-control text-center">
         	<input type="button" value="+" class="btn-success" onclick="calcula('+')">
-        	<input type="button" value="*" class="btn-primary">
-            <input type="button" value="/" class="btn-info">
-            <input type="button" value="exp" class="btn-warning">
-            <input type="button" value="mod" class="btn-default">
-            <input type="button" value="-" class="btn-danger">
+        	<input type="button" value="*" class="btn-primary" onclick="calcula('*')">
+            <input type="button" value="/" class="btn-info" onclick="calcula('/')">
+            <input type="button" value="exp" class="btn-warning" onclick="calcula('^')">
+            <input type="button" value="mod" class="btn-default" onclick="calcula('%')">
+            <input type="button" value="-" class="btn-danger" onclick="calcula('-')">
         	<label for="resultado" >Resultado</label>
         	<input type="text" value="" id="resultado"  class="form-control text-center" placeholder="Resultado" name="resultado">
         </form>
