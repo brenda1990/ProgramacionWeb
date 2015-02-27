@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practica 4</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width">
+    <link href="../Practica2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Practica2/bootstrap/js/bootstrapValidator.js" rel="stylesheet">
+    <link href="../Practica2/bootstrap/js/bootstrapValidator.min.js" rel="stylesheet">
+    <script type="text/javascript" src="../Practica2/bootstrap/js/bootstrapValidator.min.js"></script>
+    <link rel="stylesheet" href="../Practica2/bootstrap/css/bootstrap.css"/> 
+     <link rel="stylesheet" href="../Practica2/bootstrap/css/bootstrapValidator.min.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="../Practica2/css/estiloimagen.css">
+    <script type="text/javascript" src="../Practica2/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#integerf').bootstrapValidator({
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            volumen: {
+                validators: {
+                    integer: {
+                        message: 'Este no es un valor no entero'
+                    }
+                }
+            }
+        }
+    });  
+    });
+    </script>
+    <script type="text/javascript">
+   /*alert('Hola Mundo');
+     var operador1 = 4;
+     var operador2 = 6;
+     alert(operador1);
+     alert(operador2);
+     alert((operador1+operador2));*/
+   
+    function capturar(){
+         var atrapa=document.getElementById("operador1").value;
+         var dolar = eval(atrapa / 15 );
+         alert('Brenda'+dolar);
+        document.calc.resultado.value=dolar;
+        }
+    </script>
+  </head>
+  <body>
+
+    <h1>Practica 4</h1>
+
+    <div class="container text-center">
+     <div class="row">
+        <div class="col-md-12">
+        <form name="calc">
+        	<label for="operador1">Operando 1</label>
+        	<input type="number" value="0" id="operador1"  name="operador1" class="form-control text-center">
+        	<label for="operador2">Operando 2</label>
+        	<input type="text" value="2" id="operador2"  name="operador2"class="form-control text-center">
+
+            <input type="button" value="mod" class="btn-default" onclick="capturar()">
+
+        	<label for="resultado" >Resultado</label>
+        	<input type="text" value="" id="resultado"  class="form-control text-center" placeholder="Resultado" name="resultado">
+        </form>
+        </div>
+         <div class="col-md-6">
+        	   <p class="bg-danger">Resultado</p>
+        </div>
+     </div>
+      </div>
+         <div class="container text-center" id="integerf">      
+        
+                        <label class="col-lg-3 control-label">Volumen</label>
+                        <div class="col-cmd-6">
+                            <input type="text" class="form-control" name="volumen" />
+                        </div>
+    
+                
+                </div>
+  
+
+    <script src="../Practica2/bootstrap/js/jquery.min.js"></script>
+  </body>
+  <script>
+  function validarSiNumero(numero){
+    if (!/^([0-9])*$/.test(numero))
+      alert("El valor " + numero + " no es un número");
+  }
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <style type="text/css">
+   
+    </style>
+    <!-- Bootstrap -->
+    <link href="../Practica2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Practica2/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    
+<script type="text/javascript">
+    function capturar(){
+         var atrapa=document.getElementById("pesos").value;
+         var dolar = atrapa / 15 ;
+         alert('Brenda'+dolar);
+         document.formulario.dolares.value=dolar;
+         document.formulario.resultado.value=dolar;
+        }
+</script>
+
+  </head>
+  <body>
+
+    <h1>Conversion de Pesos a Dolares</h1>
+
+    <div class="container text-center">
+ 
+        <h1>Contact Form</h1> </br>
+
+    <form  name="formulario">  
+        
+            <label class="control-label" for="peso">Pesos</label>  
+            
+                <input type="text" name="pesos" id="pesos" placeholder="Pesos">  
+            <label class="control-label" for="dolares">Dolares</label>  
+              
+                <input type="text" name="dolares" id="dolares" placeholder="Dolares">
+                <input type="text" value="2" id="resultado"  name="resultado" class="form-control text-center">  
+        <br>  
+            <input type="hidden" name="save" value="contact">  
+            <button type="submit" class="btn btn-success" onclick="capturar()">Convertir</button> 
+    </form>  
+
+    </div>
+   <script src="../jquery/jquery-1.11.2.min.js"></script>
+        <script src="../Practica2/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

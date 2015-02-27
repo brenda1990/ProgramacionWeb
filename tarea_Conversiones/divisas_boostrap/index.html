@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Divisas</title>
+
+    <!-- Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+<script>
+$(document).ready(function() {
+   
+        $('calc').bootstrapValidator({
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            operador1: {
+                validators: {
+                    integer: {
+                        message: 'Este no es un valor no entero'
+                    }
+                }
+            }
+        }
+    }); 
+});
+  function euros(){
+         var atrapa=document.getElementById("volumen").value;
+         var dolar = eval(atrapa / 15 );
+         alert('Brenda'+dolar);
+        document.calc.resultado.value=dolar +' dolares';
+        }
+        function capturar1(){
+         var atrapa=document.getElementById("operador1").value;
+         var dolar = eval(atrapa / 14.9);
+         alert('Convirtiendo a Dolares ');
+        document.calc.resultado.value=dolar;
+        }
+            function capturar2(){
+         var atrapa=document.getElementById("operador2").value;
+         var metros = eval(atrapa * 1000 );
+         alert('Convirtiendo a Metros ');
+        document.calc1.resultado1.value=metros+' metros';
+        }
+        function capturar3(){
+         var atrapa=document.getElementById("operador3").value;
+         var grados = eval((atrapa - 32)/ 1.8);
+         alert('Convirtiendo a Centigrados');
+        document.calc2.resultado2.value=grados+' grados';
+        }
+</script>
+<script type="text/javascript">
+
+</script>
+  </head>
+  <body >
+  <div class="container text-center">
+     <div class="row">
+        <div class="col-md-12" style="background-color:#FF53A9">
+          <div class="page-header">
+                 <h1>Convertidores <small>3 Ejemplos</small></h1>
+           </div>
+          <div class="col-md-4" style="background-color:#11FF88" >
+            <h4>---<span class="label label-default">Divisas</span></h4>
+             <form name="calc">
+          <label for="operador1">Pesos a Dolares</label>
+          <input type="text" value="0" id="operador1"  name="operador1" class="form-control text-center">
+          <br>
+            <input type="button" value="Convertir a Dolares" class="btn btn-warning" onclick="capturar1()">
+            <br><br>
+          <input type="text" value="" id="resultado"  class="form-control text-center" placeholder="Resultado" name="resultado">
+          <br>
+        </form>
+          </div>
+          <div class="col-md-4" style="background-color:#C082FF">
+            <div class="col-md-12">
+            <h4>---<span class="label label-default">Longitud</span></h4>
+             <form name="calc1">
+          <label for="operador1">Kilometros a Metros </label>
+          <input type="number" value="0" id="operador2"  name="operador2" class="form-control text-center">
+          <br>
+            <input type="button" value="Convertir a Metros" class="btn btn-success" onclick="capturar2()">
+            <br><br>
+          <input type="text" value="" id="resultado1"  class="form-control text-center" placeholder="Resultado" name="resultado1">
+          <br>
+        </form>
+          </div>
+        </div>
+          <div class="col-md-4" style="background-color:#9BCDFF">
+            <div class="col-md-12">
+            <h4>---<span class="label label-default">Temperatura</span></h4>
+             <form name="calc2">
+          <label for="operador3">Grados Fah a cen</label>
+          <input type="number" value="0" id="operador3"  name="operador3" class="form-control text-center">
+          <br>
+            <input type="button" value="Convertir a Centigrados" class="btn btn-info" onclick="capturar3()">
+            <br><br>
+          <input type="text" value="" id="resultado2"  class="form-control text-center" placeholder="Resultado" name="resultado2">
+        </form>
+<br>
+          </div>
+        </div>
+
+        
+      
+      </div>
+
+     </div>
+    
+      </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
